@@ -15,7 +15,7 @@ const lessons = [
     title:'¡Ponle color con CSS!',
     desc:'CSS es como la pintura 🎨 de las páginas web. Con "color" cambias el texto y con "background" cambias el fondo.',
     hint:'Prueba: color: red; o color: blue; — también puedes usar color: #FF6B9D; para colores especiales.',
-    html:'<h1>¡Mi título colorido!</h1>\n<p>Este texto tiene color.</p>',
+    html:'<h1>¡Mi primera página!</h1>\n<p>Hola, me llamo Ana.</p>\n<p>Tengo 8 años.</p>',
     css:'body {\n  font-family: sans-serif;\n  padding: 20px;\n  background: lightyellow;\n}\nh1 {\n  color: purple;\n}\np {\n  color: green;\n}',
     check:(_,c)=>c.includes('color')&&(c.includes('red')||c.includes('blue')||c.includes('purple')||c.includes('pink')||c.includes('#')),
     win:'¡Increíble artista! Tus colores se ven geniales.'
