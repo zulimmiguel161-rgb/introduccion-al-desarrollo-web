@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¡Aprende a hacer páginas web!</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="mascot">🤖</div>
+  <div class="topbar-title">¡Aprende a hacer páginas web!</div>
+  <div class="stars-bar"><span>⭐</span><span class="stars-count" id="star-count">0</span></div>
+</div>
+
+<div class="lesson-nav" id="lesson-nav"></div>
+
+<div class="main">
+  <div class="left-col">
+    <div class="lesson-box">
+      <div class="lesson-header">
+        <span class="lesson-icon" id="l-icon">🏷️</span>
+        <span class="lesson-title" id="l-title">Misión 1</span>
+      </div>
+      <div class="lesson-desc" id="l-desc"></div>
+      <button class="lesson-hint" id="hint-btn">💡 Pista</button>
+    </div>
+    <div class="editor-wrap">
+      <div class="editor-tabs">
+        <button class="etab active" id="etab-html" onclick="switchETab('html')">HTML</button>
+        <button class="etab" id="etab-css" onclick="switchETab('css')">CSS</button>
+      </div>
+      <div class="code-wrap">
+        <div class="code-hl" id="code-hl"></div>
+        <textarea class="code-input" id="code-input" spellcheck="false" autocorrect="off" autocapitalize="off"></textarea>
+      </div>
+      <div class="run-row">
+        <button class="run-btn" onclick="runCode()">▶ ¡Ejecutar!</button>
+        <span class="run-hint">Edita el código y presiona ejecutar</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-col">
+    <div class="preview-header"><div class="preview-dot"></div>Tu página aquí</div>
+    <iframe class="preview-frame" id="preview" sandbox="allow-scripts"></iframe>
+    <div class="feedback-box">
+      <div class="feedback-inner">
+        <span class="fb-mascot">🤖</span>
+        <div class="fb-text" id="fb-text">¡Hola! Soy Codito. Escribe el código y presiona ▶ ¡Ejecutar! para ver tu página.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
